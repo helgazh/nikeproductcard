@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+*{
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	font: 300 22px/1.1 'Roboto', sans-serif;
+	color:  #000000;
+	background: url('../img/bg_t.png') no-repeat 50%;
+}
+
+/* Layout */
+.ba-container{
+	padding-right: 20px;
+	padding-left: 20px;
+	max-width: 790px;
+}
+.ba-header{
+}
+.ba-header__bar{
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+}
+.ba-header__logo{
+	display: block;
+	margin-right: 125px;
+	margin-left: -90px;
+}
+.ba-header__menu{
+	display: flex;
+	margin-bottom: 37px;
+}
+.ba-header__menu li{
+	display: inline-block;
+	margin-right: 40px;
+}
+.ba-header__menu a{
+	font-size: 12.14px;
+	font-weight: 300;
+	letter-spacing: 0.005em;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+
+}
+.ba-header__menu a:hover{
+	text-decoration-line: underline;
+	padding-bottom: 10px;
+}
+.ba-card{
+	display: flex;
+	justify-content: center;
+	min-width: 750px;
+	min-height: 428px;
+	margin-left: 1px;
+	box-shadow: 46px 0 0 -20px rgba(255,255,255, .5),
+				-46px 0 0 -20px rgba(255,255,255, .5),
+				23px 0 0 -10px rgba(255,255,255, .5),
+				-23px 0 0 -10px rgba(255,255,255, .5);
+}
+.ba-card__img{
+	background: #F2F2F2;
+	width: 502px;
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+}
+.ba-card__huarache{
+	display: block;
+	position: absolute;
+	margin-top: 50px;
+	padding: 18px 29px 31px 0;
+}
+.ba-card__sneakers{
+	display: block;
+	padding-top: 44px;
+	padding-right: 43px;
+	padding-left: 10px;
+	position: absolute;
+}
+.ba-card__other-img{
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+	margin-top: 363px;
+	margin-bottom: 23px;
+}
+.ba-card__other-img img{
+	padding-right: 15px;
+}
+.ba-card-info{
+	background: #FCFCFC;
+	width: 248px;
+	height: 428px;
+}
+h1{
+	font-family: Roboto;
+	color:  #000000;
+	font-size: 24px;
+	text-align: left;
+	margin-top: 79px;
+	margin-bottom: 14px;
+	letter-spacing: -0.07em;
+}
+h1 span{
+	color:  #5e4fff;
+}
+.ba-title-new{
+	position: relative;
+}
+.ba-title-new::before{
+	content: '';
+	position: absolute;
+	top: -8px;
+	right: -13px;
+	left: -13px;
+	bottom: -8px;
+}
+
+.ba-title-new::after{
+	content: attr(data-tip);
+	position: absolute;
+	left: -3px;
+	background: #FCA505;
+	color: #fff;
+	bottom: calc(100% + 8px);
+	font-size: 14px;
+	font-weight: 400;
+	padding: 5px 10px;
+}
+.ba-firm{
+	font-family: Roboto;
+	color:  #000000;
+	font-size: 12px;
+	text-align: left;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-top: 0px;
+}
+.ba-stars{
+	display: flex;
+	margin-top: -9px;
+	margin-left: -20px;
+	cursor: pointer;
+}
+.ba-raiting{
+	display: flex;
+}
+.ba-price{
+	font-family: Roboto;
+	color:  #000000;
+	font-size: 22px;
+	font-weight: 300;
+	text-align: left;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+.ba-size p{
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.ba-size{
+	font-size: 14px;
+	font-weight: 600;
+	text-align: left;
+	appearance: none;
+}
+span.ba-size-checked:hover{
+	border: 1px solid #5e4fff;
+}
+.ba-size span{
+	display: inline-block;
+	margin-right: 29px;
+	cursor: pointer;
+
+}
+.ba-size input {
+	visibility: hidden;
+	position: absolute;
+
+}
+
+
+
+
+
+span{
+	display: block-inline;
+}
+.ba-button{
+	margin-top: 41px;
+}
+.ba-button button{
+	margin-bottom: 3px;
+}
+.ba-button-purple{
+	border: 1px solid black;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: left;
+	padding: 7px 20px;
+	background: #A100B7;
+	color: white;
+}
+.ba-button-purple:hover{
+	background: #5e4fff;
+}
+.ba-button-light{
+	border: 1px solid black;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: left;
+	padding: 8px 30px 8px 30px;
+	background: #FCFCFC;
+}
+.ba-button-light:hover{
+	background: #FCA505;
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
