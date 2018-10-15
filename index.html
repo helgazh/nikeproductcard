@@ -38,7 +38,7 @@
 		</header>
 
 		<main>
-			<div class="ba-row ba-card">
+			<article class="ba-row ba-card">
 				<div class="ba-col-6 ba-card__img">
 					<img class="ba-card__huarache" src="img/bg_title.png" alt="Huarache">
 					<img class="ba-card__sneakers" src="img/img_h.png" alt="Sneakers">
@@ -52,11 +52,11 @@
 				<!-- ba-card-img -->
 
 
-				<div class="ba-col-3 ba-card-info">
-					<h1 class="ba-title-new" data-tip="NEW">THE <span>RUNNING</span><br>
-						HAS JUST BEGUN</h1>
+				<div class="ba-col-3 ba-card__info">
+					<p class="ba-title-new" data-tip="NEW">THE <span>RUNNING</span><br>
+						HAS JUST BEGUN</p>
 					<div class="ba-raiting">
-						<p class="ba-firm">Huarache</p>
+						<h1 class="ba-firm">Huarache</h1>
 						<ul class="ba-stars">
 							<li><img src="img/Forma_1.png" alt="full_star"></li>
 							<li><img src="img/Forma_1.png" alt="full_star"></li>
@@ -68,7 +68,8 @@
 					<!-- ba-raiting -->
 					<p class="ba-price">$ 200</p>
 					<div class="ba-size">
-						<p>Size</p>
+						<form>
+						<legend>Size</legend>
 						<label>
 							<input type="radio" id="ba-size-7" name="size" value="7">
 							<span class="ba-size-checked">7</span>
@@ -91,13 +92,14 @@
 						</label>
 					</div>
 					<!-- ba-product__size -->
-					<div class="ba-button">
-						<button class="ba-button-purple">ADD TO CART</button>
-						<button class="ba-button-light">WISHLIST</button>
+					<div>
+						<button class="ba-button ba-button--purple">ADD TO CART</button>
+						<button class="ba-button ba-button--light">WISHLIST</button>
 					</div>
+				</form>
 				</div>
 				<!-- ba-card-info -->
-			</div>
+			</article>
 			<!-- ba-card -->
 		</main>
 	</div>
